@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header data-test="header" class="page-header">
+    <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="#">
           <img class="navigation-logo-image" src="/img/svg/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седоны">
@@ -42,16 +43,17 @@
         </ul>
       </nav>
     </header>
-    <main  data-test="main" class="main-index">
+    <main class="main-index">
       <section class="hero">
         <h1 class="vissually-hidden">Добро пожаловать в Седону</h1>
-        <img class="hero-text" src="/img/svg/welcome.svg" width="485" height="352" alt="Логотип городка Седона">
+        <img class="hero-welcome-logo" src="/img/svg/welcome.svg" width="485" height="352" alt="Логотип городка Седона">
         <h2>Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</h2>
+        <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
       <section class="advantages">
-        <h2 class="advantages-title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advatages-item">
             <h3 class="advantages-item-title">Настоящий городок</h3>
@@ -98,7 +100,7 @@
         </ul>
       </section>
 
-      <section data-test="hotels-search" class="hotels-search">
+      <section class="hotels-search">
         <h2 class="visually-hidden">Выбор отеля</h2>
         <p class="hotels-search-text">Заинтересовались?</p>
         <p class="hotels-search-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
