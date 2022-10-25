@@ -91,7 +91,17 @@ body {
 }
 
 .navigation-link-current {
-  border-bottom: 2px solid #756257;
+  position: relative;
+}
+.navigation-link-current::after {
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+  content: "";
+  width: calc(100% - 32px);
+  height: 2px;
+  background-color: #756257;
+
 }
 
 .navigation-user {
@@ -139,8 +149,10 @@ body {
 }
 
 .button {
-  display: inline-block;
-  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
   margin: 0;
   box-sizing: border-box;
   background-color: #756157;
@@ -155,24 +167,68 @@ body {
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  background-color: #756157;
+  color: #ffffff4d;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff4d;
+}
+
 .choose-button {
-  padding-left: 34px;
-  padding-right: 34px;
+  width: 160px;
 }
 
 .button-blue {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #68a2ca;
+}
+
+.button-blue:active {
+  background-color: #82b3d3;
+  color: #ffffff4d;
 }
 
 .button-green {
-  background-color: #7DB54F;
+  background-color: #7db54f;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #6c9e42;
+}
+
+.button-green:active {
+  background-color: #7db54f;
+  color: #ffffff4d;
 }
 
 .button-gray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
   background-color: #f2f2f2;
   color: #333333;
-  text-align: center;
 }
 
 .main-container {
@@ -378,7 +434,7 @@ body {
 }
 
 .hotels-search-link {
-  padding: 8px 50px;
+  width: 376px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -451,21 +507,18 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.subscription-form .field {
   background-color: #f2f2f2;
+
 }
 
 .subscription-button {
+  width: 232px;
+  margin: 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0;
-  padding: 8px 50px;
   background-color: #82b3d3;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -473,7 +526,7 @@ body {
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 40px 70px 30px 70px;
 }
@@ -502,7 +555,8 @@ body {
   fill: #83b3d3;
 }
 
-.social-link-icon:hover {
+.social-link-icon:hover,
+.social-link-icon:focus {
   fill: #68a2ca;
 }
 
@@ -688,7 +742,7 @@ body {
   grid-template-areas: "image image"
                        "type price"
                        "more favorites"
-                       ". rating";
+                       "rating-icon rating";
   gap: 16px;
   padding: 20px;
 }
@@ -738,6 +792,33 @@ body {
   justify-self: end;
 }
 
+.rating-icon {
+  grid-area: rating-icon;
+  background-image: url("../img/svg/star-icon.svg");
+  background-repeat: space no-repeat;
+  background-position: 0 8px;
+}
+
+.five-star {
+  width: 107px;
+}
+
+.four-star {
+  width: 89px;
+}
+
+.three-star {
+  width: 66px;
+}
+
+.two-star {
+  width: 42px;
+}
+
+.one-star {
+  width: 30px;
+}
+
 .catalog-card-rating {
   grid-area: rating;
   justify-self: end;
@@ -769,15 +850,17 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background-color: #82b3d3;
   border-radius: 4px;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  padding-top: 11.36px;
-}
+  padding-top: 11px;
+  padding-left: 12px;
+  padding-right: 12px;
+  }
 
 .pagination-link-current {
   background-color: #f2f2f2;
