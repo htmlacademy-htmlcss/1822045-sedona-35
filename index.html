@@ -13,7 +13,7 @@
       <header class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="#">
-            <img class="navigation-logo-image" src="img/svg/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седоны.">
+            <img class="navigation-logo-image" src="img/svg/logo_sedona.svg" width="140" height="70" alt="Логотип сайта Седоны.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -63,8 +63,8 @@
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-town">
               <div class="advantages-item-container advantages-item-darkblue-container">
-                <h3 class="advantages-item-title horizontal-divider">Настоящий городок</h3>
-                <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <h3 class="advantages-item-title">Настоящий городок</h3>
+                <p class="advantages-item-description horizontal-divider">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="advantages-image-container">
                 <img class="advantages-item-image" src="img/jpeg/small_town.jpg" width="800" height="384" alt="Городок Седона.">
@@ -74,20 +74,20 @@
               <ul class="advantages-item-middle-row-container">
                 <li class="advantages-item advantages-item-square">
                   <div class="advantages-item-container advantages-item-lightblue-container">
-                    <h3 class="advantages-item-title horizontal-divider horizontal-divider-gray">Небольшая площадь</h3>
-                    <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
+                    <h3 class="advantages-item-title">Небольшая площадь</h3>
+                    <p class="advantages-item-description horizontal-divider horizontal-divider-gray">Все достопримечательности находятся очень близко</p>
                   </div>
                 </li>
                 <li class="advantages-item advantages-item-trip advantages-item-blue-container">
                   <div class="advantages-item-container">
-                    <h3 class="advantages-item-title horizontal-divider horizontal-divider-gray">Красивая дорога</h3>
-                    <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <h3 class="advantages-item-title">Красивая дорога</h3>
+                    <p class="advantages-item-description horizontal-divider horizontal-divider-gray">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                   </div>
                 </li>
                 <li class="advantages-item advantages-item-tourists advantages-item-lightblue-container">
                   <div class="advantages-item-container">
-                    <h3 class="advantages-item-title horizontal-divider horizontal-divider-gray">Мало туристов</h3>
-                    <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
+                    <h3 class="advantages-item-title">Мало туристов</h3>
+                    <p class="advantages-item-description horizontal-divider horizontal-divider-gray">Большинство едет в Гранд Каньон и толпится там</p>
                   </div>
                 </li>
               </ul>
@@ -97,8 +97,8 @@
                 <img class="advantages-item-image" src="img/jpeg/bridge.jpg" width="800" height="384" alt="Мост дьявола.">
               </div>
               <div class="advantages-item-container advantages-item-darkblue-container">
-                <h3 class="advantages-item-title horizontal-divider">Там есть мост дьявола</h3>
-                <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <h3 class="advantages-item-title">Там есть мост дьявола</h3>
+                <p class="advantages-item-description horizontal-divider">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
             <li class="advantages-item">
@@ -239,7 +239,7 @@
 
     <div class="modal-container modal-close">
       <div class="modal modal-hotels-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">закрыть окно</span>
         </button>
         <section class="modal-content">
@@ -251,7 +251,9 @@
                 <input class="date-input input-field" type="text" name="date-checkin" placeholder="Укажите дату"
                   required>
               </label>
-              <button class="date-picker-button" type="button"></button>
+              <button class="date-picker-button" type="button">
+                <span class="visually-hidden">выбрать дату</span>
+              </button>
               <p class="form-message error-message">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="date-container checkout">
@@ -260,7 +262,9 @@
                 <input class="date-input input-field" type="text" name="date-checkout" placeholder="Укажите дату"
                   required>
               </label>
-              <button class="date-picker-button" type="button"></button>
+              <button class="date-picker-button" type="button">
+                <span class="visually-hidden">выбрать дату</span>
+              </button>
               <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="guests-number-container">
@@ -272,10 +276,12 @@
                   <div class="controls-container">
                     <div class="input-control-button-container">
                       <button class="input-control-button min-control-button" type="button">
+                        <span class="visually-hidden">уменьшить количество гостей</span>
                       </button>
                     </div>
                     <div class="input-control-button-container">
                       <button class="input-control-button max-control-button" type="button">
+                        <span class="visually-hidden">увеличить количество гостей</span>
                       </button>
                     </div>
                   </div>
@@ -296,10 +302,12 @@
                   <div class="controls-container">
                     <div class="input-control-button-container">
                       <button class="input-control-button min-control-button" type="button">
+                        <span class="visually-hidden">уменьшить количество гостей</span>
                       </button>
                     </div>
                     <div class="input-control-button-container">
                       <button class="input-control-button max-control-button" type="button">
+                        <span class="visually-hidden">увеличить количество гостей</span>
                       </button>
                     </div>
                   </div>

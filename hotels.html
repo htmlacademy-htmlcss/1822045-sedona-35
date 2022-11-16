@@ -12,7 +12,8 @@
       <header class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img class="navigation-logo-image" src="img/svg/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седоны.">
+            <img class="navigation-logo-image" src="img/svg/logo_sedona.svg" width="140" height="70"
+              alt="Логотип сайта Седоны.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -134,14 +135,12 @@
                     <div class="range">
                       <div class="range-inputs-container">
                         <div class="range-input-container left-input">
-                        <label class="catalog-filter-label">
-                          <input class="range-input min-input" type="number" value="0" name="min price">
-                        </label>
+                          <label class="catalog-filter-label left-label" for="min-input">от</label>
+                          <input class="range-input min-input" id="min-input" type="number" value="0" name="min price">
                         </div>
                         <div class="range-input-container right-input">
-                        <label class="catalog-filter-label">
+                          <label class="catalog-filter-label right-label">до</label>
                           <input class="range-input max-input" type="number" value="9000" name="max price">
-                        </label>
                         </div>
                       </div>
                       <div class="range-scale">
@@ -219,7 +218,7 @@
                         d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="ab">
                         <path fill="#fff" d="M0 0h16v14H0z" />
                       </clipPath>
                     </defs>
@@ -235,14 +234,15 @@
                 <div class="catalog-card-item-container">
                   <a class="catalog-card-link" href="#">
                     <h3 class="catalog-card-title">Amara Resort & Spa</h3>
-                    <img class="catalog-card-image" src="img/jpeg/hotel_1.jpg" width="300" height="212" alt="Картинка гостиницы.">
+                    <img class="catalog-card-image" src="img/jpeg/hotel_1.jpg" width="300" height="212"
+                      alt="Картинка гостиницы.">
                   </a>
                   <p class="catalog-card-type">Гостиница</p>
                   <p class="catalog-card-price">От 4000
                     <span>₽</span>
                   </p>
-                  <a class="catalog-card-button-more button card-button">Подробнее</a>
-                  <button class="favorites-button button button-blue card-button" type="submit">В Избранное</button>
+                  <a class="catalog-card-button-more button card-button" href="#">Подробнее</a>
+                  <button class="favorites-button button button-blue card-button" type="button">В Избранное</button>
                   <div class="rating-icon four-star">
                     <span class="visually-hidden">рейтинг четыре звезды</span>
                   </div>
@@ -253,14 +253,15 @@
                 <div class="catalog-card-item-container">
                   <a class="catalog-card-link" href="#">
                     <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
-                    <img class="catalog-card-image" src="img/jpeg/hotel_2.jpg" width="300" height="212" alt="Картинка гостиницы.">
+                    <img class="catalog-card-image" src="img/jpeg/hotel_2.jpg" width="300" height="212"
+                      alt="Картинка гостиницы.">
                   </a>
                   <p class="catalog-card-type">Гостиница</p>
                   <p class="catalog-card-price">От 5000
                     <span>₽</span>
                   </p>
-                  <a class="catalog-card-button-more button card-button">Подробнее</a>
-                  <button class="favorites-button button  card-button button-green" type="submit">В избранном</button>
+                  <a class="catalog-card-button-more button card-button" href="#">Подробнее</a>
+                  <button class="favorites-button button  card-button button-green" type="button">В избранном</button>
                   <div class="rating-icon four-star">
                     <span class="visually-hidden">рейтинг четыре звезды</span>
                   </div>
@@ -271,14 +272,15 @@
                 <div class="catalog-card-item-container">
                   <a class="catalog-card-link" href="#">
                     <h3 class="catalog-card-title">Desert Quail Inn</h3>
-                    <img class="catalog-card-image" src="img/jpeg/hotel_3.jpg" width="300" height="212" alt="Картинка гостиницы.">
+                    <img class="catalog-card-image" src="img/jpeg/hotel_3.jpg" width="300" height="212"
+                      alt="Картинка гостиницы.">
                   </a>
                   <p class="catalog-card-type">Гостиница</p>
                   <p class="catalog-card-price">От 2500
                     <span>₽</span>
                   </p>
-                  <a class="catalog-card-button-more button">Подробнее</a>
-                  <button class="favorites-button button button-blue" type="submit">В Избранное</button>
+                  <a class="catalog-card-button-more button" href="#">Подробнее</a>
+                  <button class="favorites-button button button-blue" type="button">В Избранное</button>
                   <div class="rating-icon three-star">
                     <span class="visually-hidden">рейтинг три звезды</span>
                   </div>
@@ -289,14 +291,15 @@
                 <div class="catalog-card-item-container">
                   <a class="catalog-card-link" href="#">
                     <h3 class="catalog-card-title">GreenTree Inn</h3>
-                    <img class="catalog-card-image" src="img/jpeg/hotel_4.jpg" width="300" height="212" alt="Картинка гостиницы.">
+                    <img class="catalog-card-image" src="img/jpeg/hotel_4.jpg" width="300" height="212"
+                      alt="Картинка гостиницы.">
                   </a>
                   <p class="catalog-card-type">Гостиница</p>
                   <p class="catalog-card-price">От 1500
                     <span>₽</span>
                   </p>
-                  <a class="catalog-card-button-more button">Подробнее</a>
-                  <button class="favorites-button button button-blue" type="submit">В Избранное</button>
+                  <a class="catalog-card-button-more button" href="#">Подробнее</a>
+                  <button class="favorites-button button button-blue" type="button">В Избранное</button>
                   <div class="rating-icon two-star">
                     <span class="visually-hidden">рейтинг две звезды</span>
                   </div>
@@ -345,7 +348,7 @@
 
       <footer class="page-footer">
         <div class="page-footer-container">
-          <section class="subscription page-main-subscription inner-subscription">
+          <section class="subscription  inner-subscription">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form inner-subscription-form" action="https://echo.htmlacademy.ru/" method="post">
