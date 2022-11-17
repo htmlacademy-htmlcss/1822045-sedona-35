@@ -940,13 +940,18 @@ body {
   z-index: 2;
 }
 
-.range-input:hover,
+.range-input:hover {
+  background-color: #e6e6e6;
+}
+
 .range-input:focus {
+  background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
 
 .range-input:active {
   outline: 2px solid #000000;
+  background-color: #f2f2f2;
 }
 
 .range-input::-webkit-outer-spin-button,
