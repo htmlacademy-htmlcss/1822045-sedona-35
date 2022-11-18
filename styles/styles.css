@@ -203,6 +203,11 @@ body {
   outline: none;
 }
 
+.navigation-user .button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
@@ -332,8 +337,8 @@ body {
   text-align: center;
   margin: 0;
   margin-bottom: 90px;
-  padding-left: 275px;
-  padding-right: 270px;
+  padding-left: 270px;
+  padding-right: 266px;
   color: #333333;
 }
 
@@ -425,6 +430,10 @@ body {
   margin: 0;
   padding-left: 85px;
   padding-right: 85px;
+}
+
+.advantages-item-darkblue-container p {
+  color: #ffffff;
 }
 
 .horizontal-divider::before {
@@ -683,7 +692,7 @@ body {
 
 .copyright {
   width: 115px;
-  margin-left: 234px;
+  margin-left: 232px;
 }
 
 .copyright-logo {
